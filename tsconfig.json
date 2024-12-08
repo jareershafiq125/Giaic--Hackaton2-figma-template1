@@ -18,7 +18,7 @@
     "isolatedModules": true,
     "jsx": "preserve"
     "devDependencies": {
-  "yaml": "^2.6.0"
+  "yaml": "^2.7.0"
 }
   }
 }
