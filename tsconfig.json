@@ -17,5 +17,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve"
+    "devDependencies": {
+  "yaml": "^2.6.0"
+}
   }
 }
