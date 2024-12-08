@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",        // The base directory to resolve non-relative modules
+    "paths": {
+      "@/*": ["src/*"],     // Alias '@' to the src directory (adjust if your structure differs)
+      "@/components/*": ["src/components/*"],
+      "@/styles/*": ["src/styles/*"]
+    },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,11 +22,15 @@
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
+
+
