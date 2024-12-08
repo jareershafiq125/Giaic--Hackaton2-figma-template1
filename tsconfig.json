@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",        // The base directory to resolve non-relative modules
+    "baseUrl": ".",        
     "paths": {
-      "@/*": ["src/*"],     // Alias '@' to the src directory (adjust if your structure differs)
+      "@/*": ["src/*"],
       "@/components/*": ["src/components/*"],
       "@/styles/*": ["src/styles/*"]
     },
@@ -16,21 +16,6 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": ["node_modules"]
+    "jsx": "preserve"
+  }
 }
-
-
